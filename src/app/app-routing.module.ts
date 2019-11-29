@@ -8,7 +8,8 @@ const routes: Routes = [
     path: "news-single",
     loadChildren: "./news-single/news-single.module#NewsSinglePageModule"
   },
-  { path: 'add-news', loadChildren: './add-news/add-news.module#AddNewsPageModule' }
+  { path: 'add-news', loadChildren: './add-news/add-news.module#AddNewsPageModule' },  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' }
+
 
 ];
 @NgModule({

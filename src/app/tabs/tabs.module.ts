@@ -10,8 +10,9 @@ import { TabsPage } from './tabs.page';
 import { ContactPageModule } from '../contact/contact.module';
 import { AboutPageModule } from '../about/about.module';
 import { HomePageModule } from '../home/home.module';
-import {NewsPageModule} from '../news/news.module'
-
+import {NewsPageModule} from '../news/news.module';
+import {ProfilePageModule} from '../profile/profile.module';
+import { from } from 'rxjs';
 @NgModule({
   imports: [
     IonicModule,
@@ -21,7 +22,8 @@ import {NewsPageModule} from '../news/news.module'
     HomePageModule,
     AboutPageModule,
     ContactPageModule,
-    NewsPageModule
+    NewsPageModule,
+    ProfilePageModule
   ],
   declarations: [TabsPage]
 })

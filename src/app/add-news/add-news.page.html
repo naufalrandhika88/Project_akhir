@@ -10,22 +10,36 @@
 </ion-header>
 
 <ion-content>
-  <form #f="ngForm" (ngSubmit)="saveOffer(f)">
+  <!-- <form #f="ngForm" (ngSubmit)="addNewsa(f)"> -->
     <ion-list>
         <ion-item>
             <ion-label position="floating">Image URL</ion-label>
-            <ion-input type="text" ngModel name="imgUrl"></ion-input>
+            <ion-input type="text" [(ngModel)]="newsa.image" ></ion-input>
           </ion-item>
       <ion-item>
         <ion-label position="floating">Judul berita</ion-label>
-        <ion-input type="text" ngModel name="title"></ion-input>
+        <ion-input type="text" [(ngModel)]="newsa.title"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Isi Berita</ion-label>
-        <ion-input type="text" ngModel name="description"></ion-input>
+        <ion-input type="text" [(ngModel)]="newsa.deskripsi"></ion-input>
       </ion-item>
     </ion-list>
-    <ion-button type="submit" expand="block">Submit</ion-button>
+    <ion-button type="submit" expand="block" (click)="addNewsa()">Submit</ion-button>
     <ion-button type="button" color="dark" expand="block">Cancel</ion-button>
-  </form>
+  <!-- </form> -->
+  <!-- <div *ngIf="userDoc">
+      <ion-list>
+      <ion-item>Title: {{ userDoc[0].title }}</ion-item>
+      <ion-item>Deskripsi: {{ userDoc[0].deskripsi }}</ion-item>
+      <ion-item>Image: {{ userDoc[0].image }}</ion-item>
+    </ion-list>
+  </div>
+  <div>
+    <ion-list *ngFor="let s of userDoc">
+      <ion-item>Title: {{ s.title }}</ion-item>
+      <ion-item>Deskripsi: {{ s.deskripsi }}</ion-item>
+      <ion-item>Image: {{ s.image }}</ion-item>
+    </ion-list>
+  </div> -->
 </ion-content>

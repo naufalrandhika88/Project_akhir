@@ -5,9 +5,21 @@
 
 export const environment = {
   production: false,
-  firebaseAPIKey: "AIzaSyBNDASFTHW_rA6SHX89F3UYSV1xlOFUwtA",
-  apiUrl: "https://newsapi.org/v2",
-  apiKey: "AIzaSyDabHZU-dmdvMGmZMkkJ5jUKjn5zTMpExM"
+ 
+  firebase: {
+    apiKey: "AIzaSyCqDdXPd50X7J_lCesuffolQpAkXdiPwPk",
+    authDomain: "forest-be91e.firebaseapp.com",
+    databaseURL: "https://forest-be91e.firebaseio.com",
+    projectId: "forest-be91e",
+    storageBucket: "forest-be91e.appspot.com",
+    messagingSenderId: "360939311719",
+    appId: "1:360939311719:web:c23408abbbc0a34036bac2",
+    measurementId: "G-GTKVLGJTTK"
+  },
+
+  //apiUrl: "https://newsapi.org/v2",
+  //apiKey: "b6221a427d4243929a5449b21632dd51"
+  
 };
 
 /*

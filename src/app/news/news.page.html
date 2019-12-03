@@ -8,14 +8,16 @@
 </ion-header>
 
 <ion-content>
-  <ion-card
-    *ngFor="let article of data?.articles"
-    (click)="onGoToNewsSinglePage(article)"
+  <ion-card 
+    *ngFor="let s of userDoc"
   >
-    <ion-img [src]="article.urlToImage"></ion-img>
+    <!-- *ngFor="let article of data?.articles"
+    (click)="onGoToNewsSinglePage(article)"
+  > -->
+    <ion-img [src]="s.image"></ion-img>
 
     <ion-card-content>
-      <ion-card-title>{{ article.title }}</ion-card-title>
+      <ion-card-title>{{ s.title }}</ion-card-title>
     </ion-card-content>
   </ion-card>
 

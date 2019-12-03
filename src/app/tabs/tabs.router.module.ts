@@ -1,43 +1,48 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
 
-import { TabsPage } from './tabs.page';
-import { AboutPage } from '../about/about.page';
-import { ContactPage } from '../contact/contact.page';
-import { NewsPage } from '../news/news.page';
-import { ProfilePage} from '../profile/profile.page';
+import { TabsPage } from "./tabs.page";
+import { AboutPage } from "../about/about.page";
+import { ContactPage } from "../contact/contact.page";
+import { NewsPage } from "../news/news.page";
+import { ProfilePage } from "../profile/profile.page";
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: "tabs",
     component: TabsPage,
     children: [
       {
-        path: 'news',
-        outlet: 'news',
+        path: "",
+        redirectTo: "/tabs/(news:news)",
+        pathMatch: "full"
+      },
+      {
+        path: "news",
+        outlet: "news",
         component: NewsPage
       },
       {
-        path: 'about',
-        outlet: 'about',
+        path: "about",
+        outlet: "about",
         component: AboutPage
       },
       {
-        path: 'contact',
-        outlet: 'contact',
+        path: "contact",
+        outlet: "contact",
         component: ContactPage
       },
       {
-        path: 'profile',
-        outlet: 'profile',
+        path: "profile",
+        outlet: "profile",
         component: ProfilePage
       }
     ]
   },
   {
-    path: '',
-    redirectTo: '/tabs/(news:news)',
-    pathMatch: 'full'
+    path: "",
+    redirectTo: "/auth",
+    pathMatch: "full"
   }
 ];
 

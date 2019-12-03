@@ -13,7 +13,7 @@ import { AgmCoreModule } from "@agm/core";
     CommonModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: "AIzaSyAxLJvRpNEsIJ3FKZDoAHeJa-3qYR96jFE"
+      apiKey: "AIzaSyDqvejUkbbqph6J9c-IDG_MSSUrF9AjZ2Q"
     }),
     RouterModule.forChild([{ path: "", component: ContactPage }])
   ],

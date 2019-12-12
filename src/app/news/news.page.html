@@ -8,9 +8,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card 
-    *ngFor="let s of userDoc"
-  >
+  <ion-card *ngFor="let s of userDoc" (click)="onGoToNewsSinglePage(article)">
     <!-- *ngFor="let article of data?.articles"
     (click)="onGoToNewsSinglePage(article)"
   > -->

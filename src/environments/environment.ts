@@ -5,7 +5,7 @@
 
 export const environment = {
   production: false,
- 
+
   firebase: {
     apiKey: "AIzaSyCqDdXPd50X7J_lCesuffolQpAkXdiPwPk",
     authDomain: "forest-be91e.firebaseapp.com",
@@ -17,9 +17,8 @@ export const environment = {
     measurementId: "G-GTKVLGJTTK"
   },
 
-  //apiUrl: "https://newsapi.org/v2",
-  //apiKey: "b6221a427d4243929a5449b21632dd51"
-  
+  apiUrl: "https://newsapi.org/v2",
+  apiKey: "b6221a427d4243929a5449b21632dd51"
 };
 
 /*

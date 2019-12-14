@@ -7,7 +7,7 @@ import { NewsService } from '../news.service';
   styleUrls: ['./news-single.page.scss']
 })
 export class NewsSinglePage implements OnInit {
-  article;
+  article: any;
   constructor(private newsService: NewsService) {}
 
   ngOnInit() {

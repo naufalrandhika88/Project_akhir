@@ -25,6 +25,7 @@ export class NewsPage implements OnInit {
   ngOnInit() {}
 
   onGoToNewsSinglePage(article) {
+    console.log(article);
     this.newsService.currentArticle = article;
     this.router.navigate(["/news-single"]);
   }

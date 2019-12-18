@@ -14,4 +14,6 @@ export class NewsSinglePage implements OnInit {
     this.article = this.newsService.currentArticle;
     console.log(this.newsService.currentArticle);
   }
+
+  
 }

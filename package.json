@@ -30,7 +30,7 @@
     "@ionic/schematics-angular": "1.0.1",
     "angularfire2": "^5.2.3",
     "core-js": "^2.5.3",
-    "firebase": "^7.5.2",
+    "firebase": "^7.6.0",
     "ionic": "^5.4.9",
     "rxjs": "6.2.2",
     "zone.js": "^0.8.26"

@@ -3,6 +3,7 @@ import { ModalController } from '@ionic/angular';
 import { HttpClient } from '@angular/common/http';
 import { MapModalComponent } from '../../map-modal/map-modal.component';
 import { map } from 'rxjs/operators';
+import { PlaceService } from '../../../contact/place.service';
 
 @Component({
   selector: 'app-location-picker',
@@ -11,7 +12,7 @@ import { map } from 'rxjs/operators';
 })
 export class LocationPickerComponent implements OnInit {
 
-  constructor(private modalCtrl: ModalController, private http: HttpClient) { }
+  constructor(private modalCtrl: ModalController, private http: HttpClient, private placeSvc: PlaceService) { }
 
   ngOnInit() { }
 
@@ -24,7 +25,7 @@ export class LocationPickerComponent implements OnInit {
       this.getAddress(modalData.data.lat, modalData.data.lng).subscribe(
         (address) => {
           console.log(address);
-          // this.placeSvc.setAddress(address);
+          this.placeSvc.setAddress(address);
         }
       );
     });

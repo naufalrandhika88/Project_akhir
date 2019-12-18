@@ -13,7 +13,9 @@ import { HttpClientModule } from "@angular/common/http";
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule, FirestoreSettingsToken } from '@angular/fire/firestore';
-
+// import { LocationPickerComponent } from './shared/pickers/location-picker/location-picker.component';
+// import { MapModalComponent } from './shared/map-modal/map-modal.component';
+// LocationPickerComponent, MapModalComponent
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],

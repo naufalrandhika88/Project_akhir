@@ -5,11 +5,13 @@ import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { ContactPage } from "./contact.page";
 import { AgmCoreModule } from "@agm/core";
+import { SharedModule } from "../shared/shared.module";
 // import { environment } from "../../environments/environment";
 
 @NgModule({
   imports: [
     IonicModule,
+    SharedModule,
     CommonModule,
     FormsModule,
     AgmCoreModule.forRoot({
